@@ -25,3 +25,11 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Anotações: por helo
+Para gerar um componente: ng g c {nomeDoComponente}
+ng(angular)/g(generate)/c(component)/nomeDoComponente
+
+ Configuração loadChildren (app-routing.module.ts): 
+ Serve para definir que o acesso a rota é feito sob demanda, ou seja, somente quando o usuário tentar acessar essa rota a mesma será invocada
