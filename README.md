@@ -33,3 +33,12 @@ ng(angular)/g(generate)/c(component)/nomeDoComponente
 
  Configuração loadChildren (app-routing.module.ts): 
  Serve para definir que o acesso a rota é feito sob demanda, ou seja, somente quando o usuário tentar acessar essa rota a mesma será invocada
+
+ [(ngModel)]="" -> 2 way data bind: representa que o Angular vai fazer um meio de campo da comunicação da View do html para o modelo do componente 
+
+ @Injectable -> indica que a classe pode ser injetada em outra classe ou serviço
+ Por default é passado o provideIn como root, sendo assim o angular injeta uma vez só (Singleton)
+
+ .subscribe() -> É como se fosse um .then da promise, ou seja, aguarda o retorno do metodo
+
+Interpolação: utilizar {{ }} com um atributo no meio para o tornar dinamico
