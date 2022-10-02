@@ -1,0 +1,35 @@
+<h4 class="text-center"> Faça seu cadastro e mostre seu gatineo! </h4>
+<form class="form mt-4" [formGroup]="NovoUsuarioForm" (submit)="cadastrar()">
+  <div class="form-group">
+    <input type="text" placeholder="e-mail" class="form-control" formControlName="email">
+    <app-mensagem
+      *ngIf="NovoUsuarioForm.get('email')?.errors?.['required'] &&
+      NovoUsuarioForm.get('email')?.touched"
+      mensagem="E-mail obrigatório"
+    >
+    </app-mensagem>
+    <app-mensagem
+      *ngIf="NovoUsuarioForm.get('email')?.errors?.['email']
+      && NovoUsuarioForm.get('email')?.touched "
+      mensagem="Formato invalido de e-mail"
+    >
+    </app-mensagem>
+  </div>
+  <div class="form-group">
+    <input type="text" placeholder="Nome Completo" class="form-control" formControlName="fullName">
+    <app-mensagem
+      *ngIf="NovoUsuarioForm.get('fullName')?.errors &&
+      NovoUsuarioForm.get('email')?.touched"
+      mensagem="Nome incompleto"
+    >
+    </app-mensagem>
+  </div>
+  <div class="form-group">
+    <input placeholder="Usuário" class="form-control" formControlName="userName">
+  </div>
+  <div class="form-group">
+    <input type="password" placeholder="Senha" class="form-control" formControlName="password">
+  </div>
+  <button class="btn btn-primary btn-block">Cadastrar</button>
+</form>
+<p> Já possui cadastro? <a [routerLink]="['']"> Login</a></p>

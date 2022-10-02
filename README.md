@@ -42,3 +42,9 @@ ng(angular)/g(generate)/c(component)/nomeDoComponente
  .subscribe() -> É como se fosse um .then da promise, ou seja, aguarda o retorno do metodo
 
 Interpolação: utilizar {{ }} com um atributo no meio para o tornar dinamico
+
+Interface: serve para modelar os dados de acordo com o que nosso back-end está esperando
+
+Para validações, existe uma classe Angular que já faz esse processo, que é a classe validators
+
+Safe navigation - ao inves de precisar validar se existe aquele elemento ou propriedade, utilizando o safe navigation essa validação é feita automaticamente utilizando uma interrogação antes do ponto
