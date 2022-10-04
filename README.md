@@ -48,3 +48,6 @@ Interface: serve para modelar os dados de acordo com o que nosso back-end está 
 Para validações, existe uma classe Angular que já faz esse processo, que é a classe validators
 
 Safe navigation - ao inves de precisar validar se existe aquele elemento ou propriedade, utilizando o safe navigation essa validação é feita automaticamente utilizando uma interrogação antes do ponto
+
+
+ BehaviorSubject: toda vez que um outro componenete faz um subscribe nesse serviço ele envia o ultimo estado. É necessario mandar o estado inicial.
