@@ -34,6 +34,10 @@
   </div>
   <div class="form-group">
     <input type="password" placeholder="Senha" class="form-control" formControlName="password">
+    <app-mensagem
+    mensagem="Usuário e senha não podem ser iguals"
+    *ngIf="NovoUsuarioForm.errors?.['senhaIgualUsuario']"
+    ></app-mensagem>
   </div>
   <button class="btn btn-primary btn-block">Cadastrar</button>
 </form>
