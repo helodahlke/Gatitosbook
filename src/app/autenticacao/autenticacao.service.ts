@@ -22,6 +22,5 @@ export class AutenticacaoService {
     })
     ); //pipe: para fazer operações (salvar/alterar)
   }
-
-
 }
+
