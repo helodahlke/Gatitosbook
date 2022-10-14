@@ -51,3 +51,5 @@ Safe navigation - ao inves de precisar validar se existe aquele elemento ou prop
 
 
  BehaviorSubject: toda vez que um outro componenete faz um subscribe nesse serviço ele envia o ultimo estado. É necessario mandar o estado inicial.
+
+ Interceptor: manipula a requisição antes dela ir para o servidor. 
